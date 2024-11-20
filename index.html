@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Bookmark</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Inter:wght@100..900&family=Pacifico&family=Righteous&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Inter:wght@100..900&family=Pacifico&display=swap"
+    rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/mainstyle.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <section id="bookmark" class="py-5">
+    <div class="container">
+      <div class="inner text-center">
+        <header class="title d-inline-block">
+          <h1>Bookmarker</h1>
+        </header>
+        <div class="underline border-top-0 border-start-0 border-end-0 my-5"></div>
+        <div class="texticon fs-4">
+          <span><i class="fa-solid fa-bookmark"></i> </span>
+          <span class="marktext">Bookmark your favorite sites </span>
+          <span> <i class="fa-solid fa-bookmark"></i></span>
+        </div>
+        <div class="inputs text-start">
+          <div class="mb-3">
+            <label for="SiteName" class="form-label fw-bolder">
+              <i class="fa-solid fa-book-bookmark"></i> Site Name
+            </label>
+            <input type="text" oninput="valdition(this)" class="form-control" id="SiteName"
+              placeholder="Bookmark Name" />
+          </div>
+          <label for="MarkUrl" class="form-label fw-bolder">
+            <i class="fa-solid fa-link"></i> Url
+          </label>
+          <input type="url" oninput="valdition(this)" class="form-control" id="MarkUrl" placeholder="Url" />
+          <div class="w-auto text-center my-5"> <button onclick="saveInfo()" type="button"
+              class="btn btn-danger px-5">Submit</button></div>
+        </div>
+        <div class="underline border-top-0 border-start-0 border-end-0 my-5">
+
+        </div>
+        <div class="tableinfo">
+          <table class="table table-bordered ">
+            <thead>
+              <tr>
+                <th scope="col">Index</th>
+                <th scope="col">Website Name</th>
+                <th scope="col">Visit</th>
+                <th scope="col">Delete</th>
+              </tr>
+            </thead>
+            <tbody id="innerBody">
+
+          </table>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <script src="js/all.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/trail.js"></script>
+</body>
+
+</html>

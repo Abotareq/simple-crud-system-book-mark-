@@ -1,0 +1,56 @@
+body
+{
+    font-family: "PT Sans Caption", sans-serif;
+}
+#bookmark
+{
+background-color: #f7ecde;
+
+}
+
+#bookmark .title h1
+{
+    position: relative;
+    font-family: pacifico;
+    font-size: 50px;
+    z-index: 9999;
+}
+
+#bookmark .title h1::after
+{
+    z-index: -99999;
+    content: ' ';
+    height: 20px;
+    width: 100%;
+    background-color: #fec260;
+    position: absolute;
+    bottom: 0;
+    transition: all 1s;
+    
+transform: translateX(-100%);    
+}
+#bookmark .title:hover h1::after
+{
+height: 40px;
+}
+
+.underline
+{
+    border-bottom: 2px;
+    border-style: dotted;
+    
+
+}
+.inner .texticon
+{
+background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+background-clip: text;
+
+
+} 
+.inner .texticon .marktext
+{
+    font-family: "Righteous", sans-serif;
+}
